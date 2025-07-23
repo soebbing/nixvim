@@ -1,29 +1,43 @@
 {
-  colorschemes.solarized8 = {
+  colorschemes.kanagawa = {
     enable = true;
 
     settings = {
-      style = "light";
-      transparent = false;
-
-      integrations = {
-        treesitter = true;
-        telescope = true;
-        gitsigns = true;
-        cmp = true;
-        which_key = true;
-
-        native_lsp = {
-          enabled = true;
-          virtual_text = {
-            errors = [ "italic" ];
-            hints = [ "italic" ];
+    colors = {
+      palette = {
+        fujiWhite = "#FFFFFF";
+        sumiInk0 = "#000000";
+      };
+      theme = {
+        all = {
+          ui = {
+            bg_gutter = "none";
           };
-          underlines = {
-            errors = [ "underline" ];
+        };
+        dragon = {
+          syn = {
+            parameter = "yellow";
+          };
+        };
+        wave = {
+          ui = {
+            float = {
+              bg = "none";
+            };
           };
         };
       };
     };
+    commentStyle = {
+      italic = true;
+    };
+    compile = false;
+    dimInactive = false;
+    functionStyle = { };
+    overrides = "function(colors) return {} end";
+    terminalColors = true;
+    theme = "wave";
+    transparent = false;
+    undercurl = true;
   };
 }
