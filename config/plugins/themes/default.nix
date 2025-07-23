@@ -1,5 +1,5 @@
 {
-  colorschemes.solarized-osaka = {
+  colorschemes.solarized8 = {
     enable = true;
 
     settings = {
